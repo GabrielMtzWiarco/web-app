@@ -7,11 +7,16 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-button expand="block" (click)="alerta()" color="secondary" >
+    <ion-icon name="image-outline"></ion-icon>Alert
+  </ion-button>
+  <ion-button expand="block" (click)="beep()" color="secondary" >
+    <ion-icon name="image-outline"></ion-icon>Bepp
+  </ion-button>
+  <ion-button expand="block" (click)="confirmar()" color="secondary" >
+    <ion-icon name="image-outline"></ion-icon>Confirmar
+  </ion-button>
+  <ion-button expand="block" (click)="prompt1()" color="secondary" >
+    <ion-icon name="image-outline"></ion-icon>Prompt
+  </ion-button>
 </ion-content>
